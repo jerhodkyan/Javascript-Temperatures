@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    
+<h5>Enter Farenheit Value</h5>
+    <button onclick="fToC()">F to C</button>
+
+
+<p id="demo"></p>
+<p id="result"></p> 
+
+
+        <script>
+            
+function fToC() {
+  var C = prompt("Enter the Farenheit Value:", "0");
+    
+  if (C == null || C == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Output: ";
+    results = (5/9) * (C-32);
+  }
+  document.getElementById("demo").innerHTML = txt;
+  document.getElementById("result").innerHTML = results;
+}
+        </script>
+
+    </body>
+</html>
